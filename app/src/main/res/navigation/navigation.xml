@@ -9,5 +9,14 @@
         android:id="@+id/hitungFragment2"
         android:name="org.d3if4020.hitungbmi.ui.HitungFragment"
         android:label="HitungFragment"
-        tools:layout="@layout/fragment_hitung"/>
+        tools:layout="@layout/fragment_hitung">
+        <action
+            android:id="@+id/action_hitungFragment2_to_saranFragment2"
+            app:destination="@id/saranFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/saranFragment"
+        android:name="org.d3if4020.hitungbmi.ui.SaranFragment"
+        android:label="SaranFragment"
+        tools:layout="@layout/fragment_saran"/>
 </navigation>
