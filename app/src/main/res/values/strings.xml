@@ -32,6 +32,9 @@
     <string name="bagikan">Bagikan</string>
     <string name="bagikan_template">Berat badan: %1$s kg\nTinggi badan: %2$s
 cm\nJenis kelamin: %3$s\n\n%4$s\n%5$s</string>
+    <string name="belum_ada_data">Belum ada data</string>
+    <string name="history">Histori</string>
+    <string name="histori">Histori</string>
 
 
 </resources>

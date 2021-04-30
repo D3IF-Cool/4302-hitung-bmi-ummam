@@ -65,11 +65,17 @@ class HitungFragment : Fragment(){
         inflater.inflate(R.menu.options_menu, menu)
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.menu_about) {
-            findNavController().navigate(
-                    R.id.action_hitungFragment2_to_aboutFragment2)
-            return true
+        when(item.itemId) {
+            R.id.menu_histori -> {
+                findNavController().navigate(R.id.action_hitungFragment2_to_historiFragment)
+                return true
+            }
+            R.id.menu_about -> {
+                findNavController().navigate(R.id.action_hitungFragment2_to_aboutFragment2)
+                return true
+            }
         }
+
         return super.onOptionsItemSelected(item)
     }
 
