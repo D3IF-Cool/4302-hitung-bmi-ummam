@@ -35,6 +35,8 @@ cm\nJenis kelamin: %3$s\n\n%4$s\n%5$s</string>
     <string name="belum_ada_data">Belum ada data</string>
     <string name="history">Histori</string>
     <string name="histori">Histori</string>
+    <string name="berat_x">BB: %1$.1f</string>
+    <string name="tinggi_x">TB: %1$.1f</string>
 
 
 </resources>

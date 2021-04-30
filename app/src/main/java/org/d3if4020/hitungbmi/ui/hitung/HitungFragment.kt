@@ -47,11 +47,6 @@ class HitungFragment : Fragment(){
             viewModel.selesaiNavigasi()
         })
 
-        viewModel.data.observe(viewLifecycleOwner, {
-            if (it == null) return@observe
-            Log.d("HitungFragment", "Data tersimpan. ID = ${it.id}")
-        })
-
         viewModel.getHasilBmi().observe(viewLifecycleOwner, {
             if (it == null) return@observe
             binding.bmiTextView.text = getString(R.string.bmi_x, it.bmi)

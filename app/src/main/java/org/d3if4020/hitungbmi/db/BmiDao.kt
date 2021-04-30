@@ -9,6 +9,7 @@ import androidx.room.Query
 interface BmiDao {
     @Insert
     fun insert(bmi: BmiEntity)
-    @Query("SELECT * FROM bmi ORDER BY id DESC LIMIT 1")
-    fun getLastBmi(): LiveData<BmiEntity?>
+
+    @Query("SELECT * FROM bmi ORDER BY id DESC")
+    fun getLastBmi(): LiveData<List<BmiEntity>>
 }
